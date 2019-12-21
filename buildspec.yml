@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip3 -m venv env
+      - env/bin/pip install --upgrade pip setuptools
+      - env/bin/pip install -e ".[testing]"
+
+  pre_build:
+    commands:
+      - echo Nothing to do.
+  build:
+    commands:
+      - echo Nothing to build on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  type: zip
+  files:
+    - 'README.txt'
+    - 'env/*'
+    - 'saas/*'
+    - 'saas.egg-info/*'
+    - 'setup.py'
