@@ -47,5 +47,7 @@ The buildspec.yml controls the deployment pipeline which builds new artifacts to
 
 The appspec.yml controls the scripts which run on the instances to update new artifacts.
 
-The 'dev' branch goes to development.
+The 'dev' branch updates the development environment, 'staging' udpates the staging environemnt
+and the 'prod' branch updates the production environment.
+
 
