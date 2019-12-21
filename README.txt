@@ -50,4 +50,7 @@ The appspec.yml controls the scripts which run on the instances to update new ar
 The 'dev' branch updates the development environment, 'staging' udpates the staging environemnt
 and the 'prod' branch updates the production environment.
 
+ToDo
+----
 
+ - Launching new ASG needs a commit to trigger an initial deploy.
