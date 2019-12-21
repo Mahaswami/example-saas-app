@@ -39,3 +39,8 @@ Getting Started
 - Run your project.
 
     env/bin/pserve development.ini
+
+Deploying
+---------
+
+The 'dev' branch goes to development.
