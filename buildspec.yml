@@ -24,6 +24,9 @@ artifacts:
   name: saas-app-$(date +%Y-%m-%d_%H:%M)
   files:
     - 'README.txt'
+    - 'aws.ini'
+    - 'appspec.yml'
+    - 'deploy/**/*'
     - 'env/**/*'
     - 'saas/**/*'
     - 'saas.egg-info/**/*'
