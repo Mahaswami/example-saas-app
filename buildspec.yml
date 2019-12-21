@@ -31,3 +31,5 @@ artifacts:
     - 'saas/**/*'
     - 'saas.egg-info/**/*'
     - 'setup.py'
+    - 'pyramid.wsgi'
+
