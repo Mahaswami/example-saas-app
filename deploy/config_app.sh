@@ -1,8 +1,5 @@
-#!/bin/bash -e
+#!/bin/bash
 
-. /opt/paco/EC2Manager/ec2lm_functions.bash
+DATABASE_ARN=`/tmp/get_rds_dsn.sh`
 
-SECRETS_MANAGER_REF="${EC2LM_PACO_ENVIRONMENT_REF}.secrets_manager.saas.site"
-CONFIG_FILE="/var/www/saas-app/server.ini"
-
-ec2lm_replace_secret_in_file ${SECRETS_MANAGER_REF}.database "#MYSQL_DATABASE_PASSWORD#" ${CONFIG_FILE}
+sed -i -e "s/#DATABASE_ARN#/$DATABASE_ARN/" $CONFIG_FILE
