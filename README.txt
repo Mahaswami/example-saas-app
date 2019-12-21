@@ -43,4 +43,9 @@ Getting Started
 Deploying
 ---------
 
+The buildspec.yml controls the deployment pipeline which builds new artifacts to deploy.
+
+The appspec.yml controls the scripts which run on the instances to update new artifacts.
+
 The 'dev' branch goes to development.
+
