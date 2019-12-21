@@ -21,9 +21,10 @@ phases:
 
 artifacts:
   type: zip
+  name: saas-app-$(date +%Y-%m-%d_%H:%M)
   files:
     - 'README.txt'
-    - 'env/*'
-    - 'saas/*'
-    - 'saas.egg-info/*'
+    - 'env/**/*'
+    - 'saas/**/*'
+    - 'saas.egg-info/**/*'
     - 'setup.py'
