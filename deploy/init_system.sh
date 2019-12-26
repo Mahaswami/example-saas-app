@@ -10,7 +10,7 @@ $BASE_DIR/env/bin/pip install -e /var/www/saas-app/
 # database migrations directory
 mkdir -p $BASE_DIR/saas/alembic/versions
 
-# ToDo: create and populate database?
+# ToDo: create database
 # run database migrations
 $BASE_DIR/env/bin/alembic -c development.ini revision --autogenerate -m "init"
 $BASE_DIR/env/bin/alembic -c development.ini upgrade head
