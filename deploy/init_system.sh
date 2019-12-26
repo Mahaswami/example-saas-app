@@ -10,4 +10,3 @@ $BASE_DIR/env/bin/pip install -e /var/www/saas-app/
 # database migrations directory
 mkdir -p $BASE_DIR/saas/alembic/versions
 
-# ToDo: create and populate database?
