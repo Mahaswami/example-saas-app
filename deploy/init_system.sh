@@ -11,7 +11,7 @@ $BASE_DIR/env/bin/pip install -e /var/www/saas-app/
 mkdir -p $BASE_DIR/saas/alembic/versions
 
 # ToDo: create and populate database?
-# run migrations
+# run database migrations
 $BASE_DIR/env/bin/alembic -c development.ini revision --autogenerate -m "init"
 $BASE_DIR/env/bin/alembic -c development.ini upgrade head
 $BASE_DIR/env/bin/initialize_saas_db aws.ini
