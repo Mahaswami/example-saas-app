@@ -39,3 +39,18 @@ Getting Started
 - Run your project.
 
     env/bin/pserve development.ini
+
+Deploying
+---------
+
+The buildspec.yml controls the deployment pipeline which builds new artifacts to deploy.
+
+The appspec.yml controls the scripts which run on the instances to update new artifacts.
+
+The 'dev' branch updates the development environment, 'staging' udpates the staging environemnt
+and the 'prod' branch updates the production environment.
+
+ToDo
+----
+
+ - Launching new ASG needs a commit to trigger an initial deploy.

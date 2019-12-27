@@ -1,0 +1,35 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        python: 3.7
+    commands:
+      - python3 -m venv env
+      - env/bin/pip install --upgrade pip setuptools
+      - env/bin/pip install -e ".[testing]"
+
+  pre_build:
+    commands:
+      - echo Nothing to do.
+  build:
+    commands:
+      - echo Nothing to build on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  type: zip
+  name: saas-app-$(date +%Y-%m-%d_%H:%M)
+  files:
+    - 'README.txt'
+    - 'CHANGES.txt'
+    - 'aws.ini'
+    - 'appspec.yml'
+    - 'deploy/**/*'
+    - 'saas/**/*'
+    - 'saas.egg-info/**/*'
+    - 'setup.py'
+    - 'pyramid.wsgi'
+
