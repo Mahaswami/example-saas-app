@@ -54,3 +54,5 @@ ToDo
 ----
 
  - Launching new ASG needs a commit to trigger an initial deploy.
+
+ - added staging branch
