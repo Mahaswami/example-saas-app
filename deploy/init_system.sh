@@ -16,5 +16,3 @@ mkdir -p $BASE_DIR/saas/alembic/versions
 # run database migrations
 #$BASE_DIR/env/bin/alembic -c /var/www/saas-app/aws.ini revision --autogenerate -m "init"
 #$BASE_DIR/env/bin/alembic -c /var/www/saas-app/aws.ini upgrade head
-
-
